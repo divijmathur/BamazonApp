@@ -1,36 +1,27 @@
--- Create a database called 'Bamazon' and switch into it for this activity --
-CREATE DATABASE bamazon_db;
+CREATE database bamazon_db;
+
 USE bamazon_db;
 
--- Create a table called 'products' which will contain the store inventory --
 CREATE TABLE products (
-	item_id INTEGER(11) AUTO_INCREMENT NOT NULL,
-	product_name VARCHAR(30) NOT NULL,
-	department_name VARCHAR(20) NOT NULL,
-	price DECIMAL(10,2) NOT NULL,
-	stock_quantity INTEGER(11) NOT NULL,
-	PRIMARY KEY (item_id)
+  item_id INT(10) AUTO_INCREMENT NOT NULL,
+  product_name VARCHAR(100) NOT NULL,
+  department_name VARCHAR(100) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  stock_quantity INT (100) NOT NULL,
+  PRIMARY KEY (item_id)
 );
 
--- Insert data into the 'products' table --
+Select * from products;
+
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES  ('Dove Shampoo', 'Cosmetics', 5.75, 500),
-		('Dove Conditioner', 'Cosmetics', 6.25, 627),
-		('Glad 12 Gal Trash Bags', 'Grocery', 5.99, 300),
-		('Brawny Paper Towels', 'Grocery', 4.25, 400),
-		('Granny Smith Apples', 'Produce', 0.35, 800),
-		('Chiquita Bannana', 'Produce', 0.20, 10000),
-		('Tropicana Orange Juice', 'Grocery', 4.45, 267),
-		('Horizon Organic Milk', 'Grocery', 4.50, 200),
-		('Huggies Diapers', 'Children', 2.75, 476),
-		('Charmin Toiler Paper', 'Grocery', 12.99, 575),
-		('Pampers Baby Wipes', 'Children', 1.50, 423),
-		('Yoga Mat', 'Sports', 12.75, 150),
-		('5lb Dumb bell', 'Sports', 7.99, 89),
-		('Tie Dye Shirt', 'Clothing', 5.55, 120),
-		('Nike Shorts', 'Clothing', 17.88, 250),
-		('Purina Cat Chow', 'Pet', 7.25, 157),
-		('Fancy Feast Wet Cat Food', 'Pet', 12.50, 163),
-		('Ibuprophen', 'Pharmacy', 4.95, 389),
-		('Band Aid', 'Pharmacy', 3.25, 550),
-		('Ben & Jerry Ice Cream', 'Grocery', 3.25, 432);
+VALUES ("iPad", "Electronics", 700.00, 10),
+("XBox 1", "Electronics", 299.99, 8),
+("Keurig", "Kitchen", 45.00, 15),
+("Pokemon Cards", "Games", 5.00, 100),
+("'The Beatles' Vinyl Record", "Music", 100.00, 5),
+("Pogo Stick", "Outdoors", 30.00, 200),
+("Tent", "Camping", 80.00, 40),
+("Diamond Earrings", "Jewelry", 2000.00, 20),
+("iPhone 7 Case", "Electronics", 20.99, 100),
+("Curtains", "Home", 39.99, 72),
+("Car Mat - 4 Pack", "Automobile", 30.00, 107);
