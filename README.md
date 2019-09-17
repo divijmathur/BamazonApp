@@ -10,18 +10,14 @@ The customer interface allows the user to view the current inventory of store it
 
 To run the customer interface please follow the steps below:
 
-git clone git@github.com:angrbrd/bamazon.git
+git clone git@github.com:divijmathur/bamazon.git
 cd bamazon
 npm install
 node bamazonCustomer.js
 Manager Interace
 The manager interface presents a list of four options, as below.
 
-? Please select an option: (Use arrow keys)
-❯ View Products for Sale 
-  View Low Inventory 
-  Add to Inventory 
-  Add New Product
+
 The View Products for Sale option allows the user to view the current inventory of store items: item IDs, descriptions, department in which the item is located, price, and the quantity available in stock.
 
 The View Low Inventory option shows the user the items which currently have fewer than 100 units available.
@@ -32,7 +28,7 @@ The Add New Product option allows the user to enter details about a new product 
 
 To run the manager interface please follow the steps below:
 
-git clone git@github.com:angrbrd/bamazon.git
+git clone git@github.com:divijmathur/bamazon.git
 cd bamazon
 npm install
 node bamazonManager.js
